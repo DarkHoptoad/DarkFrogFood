@@ -5,7 +5,7 @@ function Header() {
     <div className="header unselectable">
       <div className="header__content">
         <Link to="/" className="header__logo">
-          DarkFrog Shop
+          DarkFrog Food
         </Link>
         <div className="header__nav">
           <ul>
