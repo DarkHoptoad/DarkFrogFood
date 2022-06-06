@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/DarkFrogFood/static/css/main.3791d52b.css",
+    "main.js": "/DarkFrogFood/static/js/main.7bcaf847.js",
+    "index.html": "/DarkFrogFood/index.html",
+    "main.3791d52b.css.map": "/DarkFrogFood/static/css/main.3791d52b.css.map",
+    "main.7bcaf847.js.map": "/DarkFrogFood/static/js/main.7bcaf847.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3791d52b.css",
+    "static/js/main.7bcaf847.js"
+  ]
+}
