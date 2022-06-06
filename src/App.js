@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { Header } from "./layout/Header";
+import { Footer } from "./layout/Footer";
+import { Route, Switch } from "react-router-dom";
+import { About } from "./pages/About";
+import { Home } from "./pages/Home";
+import { Contact } from "./pages/Contact";
+import { Nothing } from "./pages/NotFound";
+import {Category} from "./pages/Category"
+import {Recipe} from './pages/Recipe'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+        <div className="page">
+          <Header />
+          <div className="hiden" />
+          <main className="content container">
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/contact" component={Contact} />
+              <Route path="/about" component={About} />
+              <Route path="/category/:name" component={Category} />
+              <Route path="/meal/:idMeal" component={Recipe} />
+              <Route component={Nothing} />
+            </Switch>
+          </main>
+          <Footer />
+        </div>
+    </>
   );
 }
 
