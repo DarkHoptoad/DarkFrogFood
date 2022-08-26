@@ -1,3 +1,3 @@
 
-[Demo](https://darkhoptoad.github.io/DarkFrogFood/)
+Demo https://darkhoptoad.github.io/DarkFrogFood/
 
